@@ -3,35 +3,52 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EasyTap</title>
-    <link rel="stylesheet" href="styles.css">
+    <title>Easytap</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #6a11cb, #2575fc);
+            color: #fff;
+        }
+        .hero {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            text-align: center;
+            padding: 20px;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 20px;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 40px;
+        }
+        .hero button {
+            background-color: #fff;
+            color: #6a11cb;
+            padding: 15px 30px;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 1.2rem;
+            transition: background 0.3s, transform 0.3s;
+        }
+        .hero button:hover {
+            background-color: #6a11cb;
+            color: #fff;
+            transform: scale(1.05);
+        }
+    </style>
 </head>
 <body>
-    <header class="hero-section">
-        <h1>Welcome to EasyTap</h1>
-        <p>Your gateway to finding jobs effortlessly.</p>
-        <a href="#login" class="btn">Get Started</a>
-    </header>
-    <main>
-        <section class="app-description">
-            <h2>About EasyTap</h2>
-            <p>EasyTap connects you with job opportunities that match your skills and interests.</p>
-        </section>
-    </main>
-    <footer>
-        <nav class="bottom-nav">
-            <a href="#login">Login</a>
-            <a href="#signup">Sign Up</a>
-            <a href="#find-jobs">Find Jobs</a>
-            <a href="#about">About</a>
-            <a href="#contact">Contact</a>
-        </nav>
-    </footer>
-    <script src="https://telegram.org/js/telegram-web-app.js"></script>
-    <script>
-        // Initialize Telegram Web App
-        const app = Telegram.WebApp;
-        app.expand();
-    </script>
+    <div class="hero">
+        <h1>Welcome to Easytap</h1>
+        <p>Your modern solution for easy tapping!</p>
+        <button>Get Started</button>
+    </div>
 </body>
 </html>
