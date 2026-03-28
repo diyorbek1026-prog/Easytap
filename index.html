@@ -3,87 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Enhanced job management platform with authentication, search, and modern UI">
-    <meta name="keywords" content="jobs, management, user authentication, responsive, accessibility">
-    <title>Job Management Platform</title>
+    <title>EasyTap</title>
     <link rel="stylesheet" href="styles.css">
-    <style>
-        body {
-            background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
-            font-family: Arial, sans-serif;
-            margin: 0;
-            padding: 0;
-        }
-        header {
-            background: #333;
-            color: #fff;
-            padding: 10px 20px;
-            text-align: center;
-        }
-        nav {
-            margin: 20px 0;
-        }
-        nav a {
-            color: #fff;
-            margin: 0 15px;
-            text-decoration: none;
-        }
-        .container {
-            max-width: 1200px;
-            margin: auto;
-            padding: 20px;
-        }
-        .job-card {
-            border: 1px solid #ccc;
-            border-radius: 5px;
-            margin: 20px 0;
-            padding: 15px;
-            transition: 0.3s;
-        }
-        .job-card:hover {
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-        }
-    </style>
 </head>
 <body>
-    <header>
-        <h1>Welcome to the Job Management Platform</h1>
-        <nav>
-            <a href="#profile">Profile</a>
-            <a href="#jobs">Jobs</a>
-            <a href="#search">Search</a>
-        </nav>
+    <header class="hero-section">
+        <h1>Welcome to EasyTap</h1>
+        <p>Your gateway to finding jobs effortlessly.</p>
+        <a href="#login" class="btn">Get Started</a>
     </header>
-    <main class="container">
-        <section id="profile">
-            <h2>User Profile</h2>
-            <!-- User profile management goes here -->
-        </section>
-        <section id="jobs">
-            <h2>Available Jobs</h2>
-            <div class="job-card">
-                <h3>Job Title 1</h3>
-                <p>Job Description for Job 1</p>
-                <button>Apply Now</button>
-            </div>
-            <div class="job-card">
-                <h3>Job Title 2</h3>
-                <p>Job Description for Job 2</p>
-                <button>Apply Now</button>
-            </div>
-            <!-- More job cards as needed -->
-        </section>
-        <section id="search">
-            <h2>Search Jobs</h2>
-            <input type="text" placeholder="Search for jobs...">
-            <button>Search</button>
+    <main>
+        <section class="app-description">
+            <h2>About EasyTap</h2>
+            <p>EasyTap connects you with job opportunities that match your skills and interests.</p>
         </section>
     </main>
     <footer>
-        <p>&copy; 2026 Job Management Platform. All rights reserved.</p>
+        <nav class="bottom-nav">
+            <a href="#login">Login</a>
+            <a href="#signup">Sign Up</a>
+            <a href="#find-jobs">Find Jobs</a>
+            <a href="#about">About</a>
+            <a href="#contact">Contact</a>
+        </nav>
     </footer>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
     <script>
-        // JavaScript for authentication and error handling goes here
+        // Initialize Telegram Web App
+        const app = Telegram.WebApp;
+        app.expand();
     </script>
 </body>
 </html>
