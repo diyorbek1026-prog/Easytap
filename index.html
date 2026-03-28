@@ -2,53 +2,82 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Easytap</title>
+    <title>Professional Homepage</title>
     <style>
         body {
             margin: 0;
             font-family: Arial, sans-serif;
-            background: linear-gradient(to right, #6a11cb, #2575fc);
-            color: #fff;
-        }
-        .hero {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            height: 100vh;
+            color: white;
+            background: linear-gradient(135deg, #6a1b9a, #ab47bc);
             text-align: center;
+        }
+        header {
             padding: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
         }
-        .hero h1 {
-            font-size: 3rem;
-            margin-bottom: 20px;
+        nav {
+            margin: 20px 0;
         }
-        .hero p {
-            font-size: 1.5rem;
-            margin-bottom: 40px;
-        }
-        .hero button {
-            background-color: #fff;
-            color: #6a11cb;
-            padding: 15px 30px;
+        button {
+            background-color: #ab47bc;
+            color: white;
             border: none;
+            padding: 10px 20px;
+            margin: 5px;
             border-radius: 5px;
             cursor: pointer;
-            font-size: 1.2rem;
-            transition: background 0.3s, transform 0.3s;
         }
-        .hero button:hover {
-            background-color: #6a11cb;
-            color: #fff;
-            transform: scale(1.05);
+        .cards {
+            display: flex;
+            justify-content: center;
+            margin: 20px;
+        }
+        .card {
+            background-color: rgba(255, 255, 255, 0.2);
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            width: 200px;
+        }
+        .statistics {
+            padding: 20px;
+            margin: 20px;
+            background-color: rgba(0, 0, 0, 0.5);
         }
     </style>
 </head>
 <body>
-    <div class="hero">
-        <h1>Welcome to Easytap</h1>
-        <p>Your modern solution for easy tapping!</p>
-        <button>Get Started</button>
+    <header>
+        <h1>Welcome to Our Professional Homepage</h1>
+        <nav>
+            <button onclick="location.href='#login'">Login</button>
+            <button onclick="location.href='#signup'">Sign Up</button>
+            <button onclick="location.href='#findjobs'">Find Jobs</button>
+            <button onclick="location.href='#about'">About</button>
+            <button onclick="location.href='#contact'">Contact</button>
+        </nav>
+    </header>
+    <section class="cards">
+        <div class="card">
+            <h2>Feature 1</h2>
+            <p>Description of Feature 1.</p>
+        </div>
+        <div class="card">
+            <h2>Feature 2</h2>
+            <p>Description of Feature 2.</p>
+        </div>
+        <div class="card">
+            <h2>Feature 3</h2>
+            <p>Description of Feature 3.</p>
+        </div>
+    </section>
+    <div class="statistics">
+        <h2>Our Statistics</h2>
+        <p>Data point 1: XX</p>
+        <p>Data point 2: XX</p>
+        <p>Data point 3: XX</p>
     </div>
 </body>
 </html>
