@@ -3,40 +3,87 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Presentation Title</title>
+    <meta name="description" content="Enhanced job management platform with authentication, search, and modern UI">
+    <meta name="keywords" content="jobs, management, user authentication, responsive, accessibility">
+    <title>Job Management Platform</title>
     <link rel="stylesheet" href="styles.css">
     <style>
-        body { font-family: Arial, sans-serif; margin: 0; padding: 0; }
-        header { background: #4CAF50; color: white; padding: 1em text-align: center; }
-        main { padding: 20px; }
-        footer { text-align: center; padding: 10px; background: #f1f1f1; }
+        body {
+            background: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background: #333;
+            color: #fff;
+            padding: 10px 20px;
+            text-align: center;
+        }
+        nav {
+            margin: 20px 0;
+        }
+        nav a {
+            color: #fff;
+            margin: 0 15px;
+            text-decoration: none;
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .job-card {
+            border: 1px solid #ccc;
+            border-radius: 5px;
+            margin: 20px 0;
+            padding: 15px;
+            transition: 0.3s;
+        }
+        .job-card:hover {
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
     </style>
 </head>
 <body>
     <header>
-        <h1>Your Presentation Title</h1>
-        <p>Subtitle or tagline can go here</p>
+        <h1>Welcome to the Job Management Platform</h1>
+        <nav>
+            <a href="#profile">Profile</a>
+            <a href="#jobs">Jobs</a>
+            <a href="#search">Search</a>
+        </nav>
     </header>
-    <main>
-        <section>
-            <h2>Introduction</h2>
-            <p>This is where you introduce your topic.</p>
+    <main class="container">
+        <section id="profile">
+            <h2>User Profile</h2>
+            <!-- User profile management goes here -->
         </section>
-        <section>
-            <h2>Key Points</h2>
-            <ul>
-                <li>Key point one</li>
-                <li>Key point two</li>
-                <li>Key point three</li>
-            </ul>
+        <section id="jobs">
+            <h2>Available Jobs</h2>
+            <div class="job-card">
+                <h3>Job Title 1</h3>
+                <p>Job Description for Job 1</p>
+                <button>Apply Now</button>
+            </div>
+            <div class="job-card">
+                <h3>Job Title 2</h3>
+                <p>Job Description for Job 2</p>
+                <button>Apply Now</button>
+            </div>
+            <!-- More job cards as needed -->
         </section>
-        <section>
-            <h2>Conclusion</h2>
-            <p>Summarize your presentation.</p>
+        <section id="search">
+            <h2>Search Jobs</h2>
+            <input type="text" placeholder="Search for jobs...">
+            <button>Search</button>
         </section>
     </main>
     <footer>
-        <p>Contact information: your.email@example.com</p>
+        <p>&copy; 2026 Job Management Platform. All rights reserved.</p>
     </footer>
+    <script>
+        // JavaScript for authentication and error handling goes here
+    </script>
 </body>
 </html>
